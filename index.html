@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive testi section </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="home">
+        <h1>Testimonials</h1>
+        <div class="review">
+            <div id="slide">
+                <div class="card">
+                    <div class="profile">
+                        <img src="men 1.jfif" alt="">
+                        <div>
+                            <h3>Om Patil</h3>
+                            <p>web developer</p>
+                        </div>
+                      
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, amet?Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Porro repellendus id nemo cumque, alias obcaecati.</p>
+
+                </div>
+
+                <div class="card">
+                    <div class="profile">
+                        <img src="girl 1.jfif" alt="">
+                        <div>
+                            <h3>Om Patil</h3>
+                            <p>FrontEnd developer</p>
+                        </div>
+                      
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, amet?Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Porro repellendus id nemo cumque, alias obcaecati.</p>
+
+                </div>
+
+                <div class="card">
+                    <div class="profile">
+                        <img src="girl 1.jfif" alt="">
+                        <div>
+                            <h3>Uday Bhirud</h3>
+                            <p>Backend developer</p>
+                        </div>
+                      
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, amet?Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Porro repellendus id nemo cumque, alias obcaecati.</p>
+
+                </div>
+
+                <div class="card">
+                    <div class="profile">
+                        <img src="men 2.jfif" alt="">
+                        <div>
+                            <h3>Abhi More</h3>
+                            <p>Product Manager</p>
+                        </div>
+                      
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, amet?Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Porro repellendus id nemo cumque, alias obcaecati.</p>
+
+                </div>
+            </div>
+
+            <div class="slidebar">
+<img src="down-arrow.png" alt="" id="downArrow">
+<img src="up-arrow.png" alt="" id="upArrow">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var slide = document.getElementById("slide");
+        var down = document.getElementById("downArrow");
+        var up = document.getElementById("upArrow");
+
+        let x = 0;
+        down.onclick = function() {
+            if( x > "-900"){
+                x = x - 300;
+            slide.style.top = x + "px"
+            }
+           
+        }
+        up.onclick = function() {
+            if( x < "0"){
+                x = x + 300;
+            slide.style.top = x + "px"
+            }
+           
+        }
+    </script>
+</body>
+
+</html>
